@@ -3,7 +3,7 @@
     "author": "AnianSollinger",
     "editor": "wokwi",
     "parts": [
-      { "type": "wokwi-arduino-nano", "id": "nano", "top": 390, "left": 100, "attrs": {} },
+      { "type": "wokwi-arduino-uno", "id": "uno", "top": 390, "left": 100, "attrs": {} },
       {
         "type": "wokwi-neopixel-canvas",
         "id": "neopixels",
@@ -13,9 +13,9 @@
       }
     ],
     "connections": [
-      [ "nano:GND.2", "neopixels:VSS", "black", [ "v0", "*", "v16" ] ],
-      [ "nano:2", "neopixels:DIN", "green", [ "v-16", "*", "v8" ] ],
-      [ "nano:5V", "neopixels:VDD", "red", [ "v20", "h-130", "*", "v8" ] ]
+      [ "uno:GND.2", "neopixels:VSS", "black", [ "v0", "*", "v16" ] ],
+      [ "uno:2", "neopixels:DIN", "green", [ "v-16", "*", "v8" ] ],
+      [ "uno:5V", "neopixels:VDD", "red", [ "v20", "h-130", "*", "v8" ] ]
     ],
     "dependencies": {}
   }
